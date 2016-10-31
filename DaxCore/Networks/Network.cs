@@ -17,40 +17,19 @@ namespace DaxCore.Networks
 	public abstract class Network
 	{
 		/// <summary>
-		/// Network's inputs count
-		/// </summary>
-		protected int inputsCount;
-
-		/// <summary>
-		/// Network's layers count
-		/// </summary>
-		protected int layersCount;
-
-		/// <summary>
 		/// Network's layers
 		/// </summary>
 		protected Layer[] layers;
 
 		/// <summary>
-		/// Network's output vector
-		/// </summary>
-		protected double[] output;
-
-		/// <summary>
 		/// Network's inputs count
 		/// </summary>
-		public int InputsCount
-		{
-			get { return inputsCount; }
-		}
+		public int InputsCount { get; protected set; }
 
 		/// <summary>
 		/// Network's layers count
 		/// </summary>
-		public int LayersCount
-		{
-			get { return layersCount; }
-		}
+		public int LayersCount { get; protected set; }
 
 		/// <summary>
 		/// Network's output vector
@@ -59,10 +38,7 @@ namespace DaxCore.Networks
 		/// <remarks>The calculation way of network's output vector is determined by
 		/// inherited class.</remarks>
 		/// 
-		public double[] Output
-		{
-			get { return output; }
-		}
+		public double[] Output { get; protected set; }
 
 		/// <summary>
 		/// Network's layers accessor
@@ -90,10 +66,10 @@ namespace DaxCore.Networks
 		/// 
 		protected Network(int inputsCount, int layersCount)
 		{
-			this.inputsCount = Math.Max(1, inputsCount);
-			this.layersCount = Math.Max(1, layersCount);
+			this.InputsCount = Math.Max(1, inputsCount);
+			this.LayersCount = Math.Max(1, layersCount);
 			// create collection of layers
-			layers = new Layer[this.layersCount];
+			layers = new Layer[this.LayersCount];
 		}
 
 		/// <summary>
@@ -110,15 +86,15 @@ namespace DaxCore.Networks
 		/// 
 		public virtual double[] Compute(double[] input)
 		{
-			output = input;
+			Output = input;
 
 			// compute each layer
 			foreach (Layer layer in layers)
 			{
-				output = layer.Compute(output);
+				Output = layer.Compute(Output);
 			}
 
-			return output;
+			return Output;
 		}
 
 		/// <summary>

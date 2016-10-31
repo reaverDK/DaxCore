@@ -58,7 +58,7 @@ namespace DaxCore.Networks
 							: base(inputsCount, neuronsCount.Length)
 		{
 			// create each layer
-			for (int i = 0; i < layersCount; i++)
+			for (int i = 0; i < LayersCount; i++)
 			{
 				layers[i] = new ActivationLayer(
 					// neurons count in the layer
