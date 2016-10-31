@@ -14,7 +14,6 @@ namespace DaxCore.ActivationFunctions
 	/// neurons, which calculate their output as a function of weighted sum of
 	/// their inputs, should implement this interfaces.
 	/// </remarks>
-	[Serializable]
 	public interface IActivationFunction
 	{
 		/// <summary>
