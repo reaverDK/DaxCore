@@ -22,7 +22,11 @@ namespace DaxCore.Serialization
 
 		public static Network LoadNetwork(string file)
 		{
-			return null;
+			IFormatter formatter = new BinaryFormatter();
+			Stream stream = new FileStream(file, FileMode.Open, FileAccess.Read, FileShare.Read);
+			Network network = (Network)formatter.Deserialize(stream);
+			stream.Close();
+			return network;
 		}
 	}
 }
