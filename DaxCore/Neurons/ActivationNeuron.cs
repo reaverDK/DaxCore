@@ -15,6 +15,7 @@ namespace DaxCore.Neurons
 	/// threshold value and then applies activation function. The neuron is
 	/// usually used in multi-layer neural networks.</remarks>
 	/// 
+	[Serializable]
 	public class ActivationNeuron : Neuron
 	{
 		/// <summary>
