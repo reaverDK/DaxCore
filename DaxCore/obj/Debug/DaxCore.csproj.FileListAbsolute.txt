@@ -1,5 +1,0 @@
-c:\users\adam\documents\visual studio 2015\Projects\DaxCore\DaxCore\bin\Debug\DaxCore.dll
-c:\users\adam\documents\visual studio 2015\Projects\DaxCore\DaxCore\bin\Debug\DaxCore.pdb
-c:\users\adam\documents\visual studio 2015\Projects\DaxCore\DaxCore\obj\Debug\DaxCore.csprojResolveAssemblyReference.cache
-c:\users\adam\documents\visual studio 2015\Projects\DaxCore\DaxCore\obj\Debug\DaxCore.dll
-c:\users\adam\documents\visual studio 2015\Projects\DaxCore\DaxCore\obj\Debug\DaxCore.pdb
