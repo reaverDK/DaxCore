@@ -16,6 +16,7 @@ namespace DaxCore.Networks
 	/// with activation functions. It consists of <see cref="ActivationLayer">activation
 	/// layers</see>.</remarks>
 	///
+	[Serializable]
 	public class ActivationNetwork : Network
 	{
 		/// <summary>
