@@ -89,6 +89,7 @@ namespace DaxCore.Layers
 		/// <see cref="neuronsCount"/>, <see cref="neurons"/> and <see cref="output"/>
 		/// members.</remarks>
 		/// 
+		[Serializable]
 		protected Layer(int neuronsCount, int inputsCount)
 		{
 			this.inputsCount = Math.Max(1, inputsCount);

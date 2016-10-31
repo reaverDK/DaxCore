@@ -14,6 +14,7 @@ namespace DaxCore.Networks
 	/// <remarks>This is a base neural netwok class, which represents
 	/// collection of neuron's layers.</remarks>
 	/// 
+	[Serializable]
 	public abstract class Network
 	{
 		/// <summary>

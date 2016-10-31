@@ -15,6 +15,7 @@ namespace DaxCore.Layers
 	/// <remarks>Activation layer is a layer of <see cref="ActivationNeuron">activation neurons</see>.
 	/// The layer is usually used in multi-layer neural networks.</remarks>
 	///
+	[Serializable]
 	public class ActivationLayer : Layer
 	{
 		/// <summary>

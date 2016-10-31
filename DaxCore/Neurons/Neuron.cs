@@ -13,6 +13,7 @@ namespace DaxCore.Neurons
 	/// <remarks>This is a base neuron class, which encapsulates such
 	/// common properties, like neuron's input, output and weights.</remarks>
 	/// 
+	[Serializable]
 	public abstract class Neuron
 	{
 		/// <summary>
