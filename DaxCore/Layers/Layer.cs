@@ -14,6 +14,7 @@ namespace DaxCore.Layers
 	/// <remarks>This is a base neural layer class, which represents
 	/// collection of neurons.</remarks>
 	/// 
+	[Serializable]
 	public abstract class Layer
 	{
 		/// <summary>
@@ -77,7 +78,6 @@ namespace DaxCore.Layers
 			get { return neurons[index]; }
 		}
 
-
 		/// <summary>
 		/// Initializes a new instance of the <see cref="Layer"/> class
 		/// </summary>
@@ -89,7 +89,7 @@ namespace DaxCore.Layers
 		/// <see cref="neuronsCount"/>, <see cref="neurons"/> and <see cref="output"/>
 		/// members.</remarks>
 		/// 
-		[Serializable]
+		
 		protected Layer(int neuronsCount, int inputsCount)
 		{
 			this.inputsCount = Math.Max(1, inputsCount);
@@ -99,7 +99,6 @@ namespace DaxCore.Layers
 			// allocate output array
 			output = new double[this.neuronsCount];
 		}
-
 
 		/// <summary>
 		/// Compute output vector of the layer 
@@ -121,7 +120,6 @@ namespace DaxCore.Layers
 
 			return output;
 		}
-
 
 		/// <summary>
 		/// Randomize neurons of the layer
