@@ -1,0 +1,4 @@
+C:\Users\adam\Documents\Visual Studio 2015\Projects\DaxCore\DaxCore\bin\Release\DaxCore.dll
+C:\Users\adam\Documents\Visual Studio 2015\Projects\DaxCore\DaxCore\bin\Release\DaxCore.pdb
+C:\Users\adam\Documents\Visual Studio 2015\Projects\DaxCore\DaxCore\obj\Release\DaxCore.dll
+C:\Users\adam\Documents\Visual Studio 2015\Projects\DaxCore\DaxCore\obj\Release\DaxCore.pdb
