@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DaxCore.Serialization
 {
-	class Serialization
+	public class Serialization
 	{
 		public static void SaveNetwork(Network network, string file)
 		{
