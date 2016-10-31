@@ -19,6 +19,7 @@ namespace DaxCore.ActivationFunctions
 	/// Functions graph:<br />
 	/// <img src="threshold.bmp" width="242" height="172" />
 	/// </remarks>
+	[Serializable]
 	public class ThresholdFunction : IActivationFunction
 	{
 		/// <summary>

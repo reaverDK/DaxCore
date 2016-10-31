@@ -25,6 +25,7 @@ namespace DaxCore.ActivationFunctions
 	/// Functions graph:<br />
 	/// <img src="sigmoid_bipolar.bmp" width="242" height="172" />
 	/// </remarks>
+	[Serializable]
 	public class BipolarSigmoidFunction : IActivationFunction
 	{
 		// sigmoid's alpha value
