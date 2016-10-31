@@ -56,8 +56,7 @@
     <Compile Include="Neurons\ActivationNeuron.cs" />
     <Compile Include="Neurons\Neuron.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Serialization\LoadNetwork.cs" />
-    <Compile Include="Serialization\SaveNetwork.cs" />
+    <Compile Include="Serialization\Serialization.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
