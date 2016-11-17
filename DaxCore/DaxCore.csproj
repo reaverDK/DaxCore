@@ -51,6 +51,7 @@
     <Compile Include="Layers\Layer.cs" />
     <Compile Include="Learning\BackPropagationLearning.cs" />
     <Compile Include="Learning\ISupervisedLearning.cs" />
+    <Compile Include="Math\Util\Hashing.cs" />
     <Compile Include="Networks\ActivationNetwork.cs" />
     <Compile Include="Networks\Network.cs" />
     <Compile Include="Neurons\ActivationNeuron.cs" />
