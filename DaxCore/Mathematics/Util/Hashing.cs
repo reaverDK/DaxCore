@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DaxCore.Math.Util
+namespace DaxCore.Mathematics.Util
 {
     class Hashing
     {
