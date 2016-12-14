@@ -61,17 +61,15 @@ namespace DaxCore.Mathematics.Util
                 char[] c = inputLower.ToCharArray();
                 byte[] unicodebytes = Encoding.Unicode.GetBytes(c);
                 List<int> num = new List<int>();
-                for (int j = 0; j < unicodebytes.Length; j++)
+                for (int j = 0; j < unicodebytes.Length; j = j+2)
                 {
                     num.Add(unicodebytes[j] + (256 * unicodebytes[j + 1]));
-                    j++;
                 }
                 double x = num.OrderBy(nums => nums).Reverse().ToList()[0];
                 for (int i = 0; i < num.Count; i++)
                 {
-                    double l = (double)x / unicodebytes.Length;
+                    double l = (hash + (double)x) / num.Count;
                     hash += (((double)num[i] * (1.0 / (i + 1))) + ((double)num[num.Count - (i + 1)] * (1.0 / (i + 1))) * (l * 0.0001));
-                    x = (double)hash;
                 }
                 hash = double.MaxValue % hash;
                 return hash;

@@ -40,7 +40,13 @@ namespace DaxCore.Networks
 		/// inherited class.</remarks>
 		/// 
 		public double[] Output { get; protected set; }
-
+        /// <summary>
+        /// Network's backpropagation
+        /// </summary>
+        /// 
+        /// <remarks>Used for training the network</remarks>
+        private Learning.BackPropagationLearning backprop { get; set; }
+       
 		/// <summary>
 		/// Network's layers accessor
 		/// </summary>
@@ -112,5 +118,5 @@ namespace DaxCore.Networks
 				layer.Randomize();
 			}
 		}
-	}
+    }
 }
