@@ -115,16 +115,22 @@ namespace DaxCore.Neurons
 			set { weights[index] = value; }
 		}
 
-		/// <summary>
-		/// Initializes a new instance of the <see cref="Neuron"/> class
-		/// </summary>
-		///
-		/// <param name="inputs">Neuron's inputs count</param>
-		/// 
-		/// <remarks>The new neuron will be randomized (see <see cref="Randomize"/> method)
-		/// after it is created.</remarks>
-		///
-		public Neuron(int inputs)
+        public double[] Weights
+        {
+            get { return weights; }
+            protected set { weights = value; }
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Neuron"/> class
+        /// </summary>
+        ///
+        /// <param name="inputs">Neuron's inputs count</param>
+        /// 
+        /// <remarks>The new neuron will be randomized (see <see cref="Randomize"/> method)
+        /// after it is created.</remarks>
+        ///
+        public Neuron(int inputs)
 		{
 			// allocate weights
 			inputsCount = Math.Max(1, inputs);

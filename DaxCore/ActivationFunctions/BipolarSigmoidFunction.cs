@@ -110,5 +110,15 @@ namespace DaxCore.ActivationFunctions
 		{
 			return (alpha * (1 - y * y) / 2);
 		}
+
+        public new string ToString()
+        {
+            return "BipolarSigmoid";
+        }
+
+        public string ToShortString()
+        {
+            return "BPS";
+        }
 	}
 }

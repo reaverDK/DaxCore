@@ -75,5 +75,15 @@ namespace DaxCore.ActivationFunctions
 		{
 			return 0;
 		}
-	}
+
+        public new string ToString()
+        {
+            return "Threshold";
+        }
+
+        public string ToShortString()
+        {
+            return "Thrs";
+        }
+    }
 }

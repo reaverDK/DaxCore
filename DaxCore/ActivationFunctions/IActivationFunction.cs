@@ -57,5 +57,8 @@ namespace DaxCore.ActivationFunctions
 		/// calculations using this method to calculate derivative)</i></remarks>
 		/// 
 		double Derivative2(double y);
+
+        string ToString();
+        string ToShortString();
 	}
 }

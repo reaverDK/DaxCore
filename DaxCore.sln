@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaxCore", "DaxCore\DaxCore.csproj", "{CDEFB4F9-08DC-472F-90FA-6F5593148369}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visualization", "..\..\Google Drive\Development\c#\DAX\Visualizer\Visualizer\Visualization.csproj", "{5992F679-9198-4FC5-8EB9-42613B1A78E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{CDEFB4F9-08DC-472F-90FA-6F5593148369}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDEFB4F9-08DC-472F-90FA-6F5593148369}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDEFB4F9-08DC-472F-90FA-6F5593148369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5992F679-9198-4FC5-8EB9-42613B1A78E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5992F679-9198-4FC5-8EB9-42613B1A78E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5992F679-9198-4FC5-8EB9-42613B1A78E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5992F679-9198-4FC5-8EB9-42613B1A78E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

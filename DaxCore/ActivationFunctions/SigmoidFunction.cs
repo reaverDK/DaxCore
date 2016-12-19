@@ -111,5 +111,15 @@ namespace DaxCore.ActivationFunctions
 		{
 			return (alpha * y * (1 - y));
 		}
-	}
+
+        public new string ToString()
+        {
+            return "Sigmoid";
+        }
+
+        public string ToShortString()
+        {
+            return "Sig";
+        }
+    }
 }
