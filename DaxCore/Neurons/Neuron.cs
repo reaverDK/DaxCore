@@ -46,7 +46,7 @@ namespace DaxCore.Neurons
 		/// <remarks>Sets the range of random generator. Affects initial values of neuron's weight.
 		/// Default value is [0, 1].</remarks>
 		/// 
-		protected static DoubleRange randRange = new DoubleRange(0.0, 1.0);
+		protected static DoubleRange randRange = new DoubleRange(-1.0, 1.0);
 
 		/// <summary>
 		/// Random number generator
