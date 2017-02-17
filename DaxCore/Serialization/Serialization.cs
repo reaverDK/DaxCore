@@ -20,11 +20,11 @@ namespace DaxCore.Serialization
 			stream.Close();
 		}
 
-		public static Network LoadNetwork(string file)
+		public static ActivationNetwork LoadNetwork(string file)
 		{
 			IFormatter formatter = new BinaryFormatter();
 			Stream stream = new FileStream(file, FileMode.Open, FileAccess.Read, FileShare.Read);
-			Network network = (Network)formatter.Deserialize(stream);
+            ActivationNetwork network = (ActivationNetwork)formatter.Deserialize(stream);
 			stream.Close();
 			return network;
 		}
